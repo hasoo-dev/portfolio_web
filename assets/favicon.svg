@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#06080F"/>
+  <rect x="1" y="1" width="62" height="62" rx="15" stroke="rgba(0, 229, 255, 0.2)" stroke-width="2"/>
+  <!-- Flutter inspired stylized H with blue/cyan gradients -->
+  <path d="M18 16L32 30L22 40L14 32L18 16Z" fill="url(#flt-grad-1)"/>
+  <path d="M32 30L44 18H52L36 34L32 30Z" fill="url(#flt-grad-2)"/>
+  <path d="M36 34L44 42H52L40 30L36 34Z" fill="url(#flt-grad-3)"/>
+  <path d="M26 44L32 50H40L30 40L26 44Z" fill="url(#flt-grad-4)"/>
+  <circle cx="48" cy="18" r="2.5" fill="#00E5FF"/>
+  <defs>
+    <linearGradient id="flt-grad-1" x1="14" y1="16" x2="32" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#54C5F8"/>
+      <stop offset="1" stop-color="#02569B"/>
+    </linearGradient>
+    <linearGradient id="flt-grad-2" x1="32" y1="18" x2="52" y2="34" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#40C4FF"/>
+      <stop offset="1" stop-color="#0288D1"/>
+    </linearGradient>
+    <linearGradient id="flt-grad-3" x1="36" y1="30" x2="52" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#02569B"/>
+      <stop offset="1" stop-color="#014377"/>
+    </linearGradient>
+    <linearGradient id="flt-grad-4" x1="26" y1="40" x2="40" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#0288D1"/>
+    </linearGradient>
+  </defs>
+</svg>

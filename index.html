@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Hasan Mehmood | Lead Flutter Developer & Mobile Architect</title>
+  <meta name="description" content="Hasan Mehmood is a Lead Flutter Developer crafting 120 FPS fluid mobile experiences, clean reactive architectures, and custom Impeller shaders across iOS, Android, and Desktop.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="Hasan Mehmood">
+  <meta name="theme-color" content="#06080F">
+
+  <!-- Favicon & Social Meta -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Hasan Mehmood | Lead Flutter Developer & Mobile Architect">
+  <meta property="og:description" content="Lead Flutter Developer with 2.7+ years of experience building 120 FPS fluid mobile experiences and reactive architectures.">
+  <meta property="og:image" content="assets/images/hassan-cutout.png">
+
+  <!-- Google Fonts: Anton for bold brutalist typography, Syne for modern tech flair, JetBrains Mono for code, Manrope for clean body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="assets/images/hassan-cutout.png" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-loading" data-section="intro">
+  <a class="skip-link" href="#craft">Skip to Content</a>
+
+  <!-- Global Flutter Debug Mode Banner -->
+  <div class="devtools-banner" id="devtools-banner" aria-hidden="true">
+    <span>FLUTTER DEBUG (debugPaintSizeEnabled: true)</span>
+  </div>
+
+  <div class="site-shell">
+    <!-- Atmospheric Stage (Full-Viewport Hero Background, Canvas, Shading, Grain, Wipe Edge) -->
+    <div class="ambient-stage" aria-hidden="true">
+      <img
+        class="background-image is-active"
+        id="bg-image-a"
+        src="assets/images/hassan-cutout.png"
+        alt="Hasan Mehmood - Lead Flutter Developer"
+        fetchpriority="high"
+        decoding="async"
+      >
+      <img
+        class="background-image"
+        id="bg-image-b"
+        alt=""
+        decoding="async"
+      >
+      <canvas id="ambient-canvas" class="ambient-canvas"></canvas>
+      <div class="video-treatment"></div>
+      <div class="content-shade"></div>
+      <div class="grain"></div>
+      <div class="wipe-edge"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="topbar">
+      <a class="home-mark" href="#intro" data-target="intro" aria-label="Go to Home">
+        <span class="brand-monogram">HM<strong>.</strong></span>
+      </a>
+
+      <!-- Center Pill Navigation -->
+      <nav class="site-nav" id="site-nav" aria-label="Main Navigation">
+        <button type="button" data-target="craft">Architecture</button>
+        <button type="button" data-target="showcase">Showcase</button>
+        <button type="button" data-target="stack">Tech Matrix</button>
+        <button type="button" data-target="mindset">Mindset</button>
+        <button type="button" data-target="contact">Contact</button>
+      </nav>
+
+      <!-- Right Action Bar -->
+      <div class="topbar-actions">
+        <!-- Sound FX Toggle -->
+        <button class="tool-btn sound-toggle" id="sound-toggle" type="button" aria-label="Toggle Sound Effects" title="UI Sound Effects">
+          <span class="sound-icon" id="sound-status-icon">🔊</span>
+        </button>
+
+        <!-- DevTools Inspector Toggle (Easter Egg) -->
+        <button class="tool-btn devtools-toggle" id="global-devtools-toggle" type="button" aria-label="Toggle Flutter DevTools Inspection" title="Toggle Flutter Widget Inspector">
+          <span class="devtools-badge">⚡ DEVTOOLS</span>
+        </button>
+
+        <!-- Contact CTA -->
+        <a class="contact-button" href="#contact" data-target="contact">Initiate Talk</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle Navigation Menu">
+          <span class="menu-toggle-lines" aria-hidden="true"><i></i><i></i></span>
+        </button>
+      </div>
+    </header>
+
+    <button class="menu-backdrop" type="button" aria-label="Close menu"></button>
+
+    <!-- Main Viewport Panels -->
+    <main class="viewport" id="main-content">
+
+      <!-- ==============================================
+           PANEL 00: HERO INTRO
+      =============================================== -->
+      <section
+        class="panel panel--intro is-active"
+        id="intro"
+        data-index="0"
+        data-mobile-position="50% 20%"
+        aria-labelledby="intro-title"
+      >
+        <div class="hero-split-container">
+          <!-- Left Column: Cinematic Portrait Showcase -->
+          <div class="hero-portrait-stage">
+            <div class="hero-portrait-card" id="hero-portrait-card">
+              <div class="hero-portrait-glow"></div>
+              <div class="hero-portrait-frame">
+                <img
+                  src="assets/images/hassan-cutout.png"
+                  alt="Hasan Mehmood - Lead Flutter Developer"
+                  class="hero-portrait-photo"
+                  fetchpriority="high"
+                >
+                <div class="hero-portrait-gradient"></div>
+                <div class="hero-portrait-badge">
+                  <span class="badge-pulse-indicator"></span>
+                  <span>LEAD FLUTTER DEV • 2.7+ YOE</span>
+                </div>
+                <div class="hero-portrait-bottom-info">
+                  <span>HASAN MEHMOOD</span>
+                  <strong>120 FPS LEAD</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Narrative Copy & Actions -->
+          <div class="intro-copy panel-copy">
+            <div class="status-badge-wrap" role="status">
+              <span class="status-indicator">
+                <span class="status-pulse-ring"></span>
+                <span class="status-pulse-dot"></span>
+              </span>
+              <span class="status-tag">AVAILABLE</span>
+              <span class="status-sep">/</span>
+              <span class="status-badge-text">Lead Engagements & Architecture</span>
+            </div>
+
+            <div class="hero-intro-header">
+              <h1 class="hero-developer-name">Hasan Mehmood</h1>
+              <div class="hero-role-tagline">
+                <span class="role-badge">Lead Flutter Developer</span>
+                <span class="role-separator">/</span>
+                <span class="role-subtitle">Cross-Platform Mobile Architect</span>
+              </div>
+            </div>
+
+            <h2 class="hero-title" id="intro-title" aria-label="Pixels. Performance. Precision.">
+              <span class="hero-word-window" aria-hidden="true">
+                <span class="hero-word is-current">PIXELS.</span>
+                <span class="hero-word">PERFORMANCE.</span>
+                <span class="hero-word">PRECISION.</span>
+              </span>
+            </h2>
+
+            <!-- Quick Metrics Bar -->
+            <div class="metrics-strip">
+              <div class="metric-item">
+                <strong>2.7+</strong>
+                <span>Years Experience</span>
+              </div>
+              <div class="metric-divider">/</div>
+              <div class="metric-item">
+                <strong>15+</strong>
+                <span>Shipped Apps</span>
+              </div>
+              <div class="metric-divider">/</div>
+              <div class="metric-item">
+                <strong>10M+</strong>
+                <span>Global Users</span>
+              </div>
+              <div class="metric-divider">/</div>
+              <div class="metric-item">
+                <strong>120 FPS</strong>
+                <span>Impeller Native</span>
+              </div>
+            </div>
+
+            <!-- Clickable Scroll Prompt (Explore Button) -->
+            <button class="hero-scroll-cue" id="hero-scroll-cue" type="button" aria-label="Explore Hasan Mehmood's Architecture & Work">
+              <span class="cue-label">EXPLORE ARCHITECTURE & WORK</span>
+              <span class="cue-arrow">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 01: ARCHITECTURE & CRAFT
+      =============================================== -->
+      <section
+        class="panel panel--content panel--craft"
+        id="craft"
+        data-index="1"
+        data-mobile-position="75% 24%"
+        aria-labelledby="craft-title"
+        aria-hidden="true"
+      >
+        <div class="content-panel panel-copy">
+          <p class="section-kicker"><span>01</span> Architecture & Core Craft</p>
+          <h2 id="craft-title">Zero Jank. Pure Architectural Rigor.</h2>
+          <p>Great mobile applications aren't defined merely by slick mockups; they survive or fail based on architectural hygiene, state determinism, and frame-budget discipline. I build Flutter applications engineered for longevity, testability, and sub-8ms rendering times.</p>
+          <p>By enforcing <strong>Clean Architecture</strong> with decoupled domain layers, single-direction data flow (BLoC / Riverpod state machines), and isolated background worker threads, complex business logic remains entirely detached from the UI widget tree.</p>
+          <p>With Flutter's modern <strong>Impeller Rendering Engine</strong>, I harness Vulkan and Metal backends to eliminate shader compilation jank completely, building custom SPIR-V fragment shaders and bespoke RenderBoxes when standard widgets can't fulfill extreme performance demands.</p>
+          
+          <!-- Interactive Code Snippets Explorer -->
+          <div class="code-explorer-box">
+            <div class="code-explorer-tabs">
+              <button class="code-tab is-active" data-tab="bloc">BLoC Event Machine</button>
+              <button class="code-tab" data-tab="shader">Impeller Shader (GLSL)</button>
+              <button class="code-tab" data-tab="channel">Native Swift Channel</button>
+            </div>
+            <div class="code-explorer-content">
+              <pre class="code-block is-active" id="code-bloc"><code><span class="kw">class</span> <span class="cls">TransactionBloc</span> <span class="kw">extends</span> <span class="cls">Bloc</span>&lt;<span class="cls">TxEvent</span>, <span class="cls">TxState</span>&gt; {
+  <span class="cls">TransactionBloc</span>({<span class="kw">required</span> <span class="kw">this</span>.repository}) : <span class="kw">super</span>(<span class="kw">const</span> <span class="cls">TxState</span>.initial()) {
+    on&lt;<span class="cls">ExecuteTransfer</span>&gt;(_onExecute, transformer: droppable());
+  }
+
+  <span class="cls">Future</span>&lt;<span class="typ">void</span>&gt; _onExecute(<span class="cls">ExecuteTransfer</span> event, <span class="cls">Emitter</span>&lt;<span class="cls">TxState</span>&gt; emit) <span class="kw">async</span> {
+    emit(<span class="kw">const</span> <span class="cls">TxState</span>.authorizing());
+    <span class="kw">final</span> result = <span class="kw">await</span> repository.transfer(event.payload);
+    result.fold(
+      (err) =&gt; emit(<span class="cls">TxState</span>.failed(err.message)),
+      (receipt) =&gt; emit(<span class="cls">TxState</span>.settled(receipt))
+    );
+  }
+}</code></pre>
+
+              <pre class="code-block" id="code-shader"><code><span class="kw">#version</span> 460 core
+<span class="kw">precision</span> highp float;
+<span class="kw">layout</span>(location = 0) <span class="kw">out</span> vec4 fragColor;
+<span class="kw">layout</span>(location = 0) <span class="kw">uniform</span> vec2 uResolution;
+<span class="kw">layout</span>(location = 1) <span class="kw">uniform</span> float uTime;
+
+<span class="typ">void</span> main() {
+  vec2 uv = (gl_FragCoord.xy * 2.0 - uResolution) / min(uResolution.x, uResolution.y);
+  float d = length(uv);
+  vec3 col = vec3(0.0, 0.9, 1.0) * (sin(d * 8.0 - uTime * 4.0) * 0.5 + 0.5);
+  fragColor = vec4(col / (d * 1.5), 1.0);
+}</code></pre>
+
+              <pre class="code-block" id="code-channel"><code><span class="kw">import</span> Flutter
+<span class="kw">import</span> LocalAuthentication
+
+<span class="kw">public class</span> <span class="cls">SwiftBiometricsPlugin</span>: <span class="cls">NSObject</span>, <span class="cls">FlutterPlugin</span> {
+  <span class="kw">public static func</span> register(with registrar: <span class="cls">FlutterPluginRegistrar</span>) {
+    <span class="kw">let</span> channel = <span class="cls">FlutterMethodChannel</span>(name: <span class="str">"dev.hassan/biometrics"</span>, binaryMessenger: registrar.messenger())
+    registrar.addMethodCallDelegate(<span class="cls">SwiftBiometricsPlugin</span>(), channel: channel)
+  }
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 02: SHOWCASE & INTERACTIVE SIMULATOR
+      =============================================== -->
+      <section
+        class="panel panel--content panel--showcase"
+        id="showcase"
+        data-index="2"
+        data-mobile-position="75% 24%"
+        aria-labelledby="showcase-title"
+        aria-hidden="true"
+      >
+        <div class="showcase-split-container">
+          <!-- Left Column: Project Narratives -->
+          <div class="content-panel panel-copy showcase-narratives">
+            <p class="section-kicker"><span>02</span> Selected Works & Live Demos</p>
+            <h2 id="showcase-title">Apps Built For Scale & 120 FPS.</h2>
+            <p class="showcase-sub">Test the interactive Flutter simulator on the right. You can tap tabs, switch apps, trigger hot-reload, and inspect the widget tree in real-time.</p>
+
+            <!-- Project Card 1: FinPulse -->
+            <div class="project-card is-active" data-project="finpulse">
+              <div class="project-tag">FINTECH & WEALTH PLATFORM</div>
+              <h3>FinPulse — Institutional Crypto & Neobanking</h3>
+              <p>Engineered for high-frequency real-time financial tracking. Features offline-first SQLite synchronization, secure biometric vault integration via native Swift/Kotlin platform channels, and dynamic Skia chart shaders running at rock-solid 120 FPS.</p>
+              <div class="tech-pill-list">
+                <span class="tech-pill">Flutter 3.29</span>
+                <span class="tech-pill">flutter_bloc</span>
+                <span class="tech-pill">Drift (SQLite)</span>
+                <span class="tech-pill">WebSockets</span>
+                <span class="tech-pill">Biometrics</span>
+              </div>
+            </div>
+
+            <!-- Project Card 2: ZenPulse -->
+            <div class="project-card" data-project="zenpulse">
+              <div class="project-tag">HEALTHCARE & AI BIOMETRICS</div>
+              <h3>ZenPulse — Circadian & HRV Recovery Engine</h3>
+              <p>AI-assisted health telemetry app ingesting continuous Bluetooth Low Energy (BLE) peripheral metrics. Custom canvas waveform painter renders live ECG pulses with zero garbage collector pauses. Powered by Riverpod and on-device TFLite.</p>
+              <div class="tech-pill-list">
+                <span class="tech-pill">Riverpod 2.x</span>
+                <span class="tech-pill">CustomPainter</span>
+                <span class="tech-pill">CoreBluetooth</span>
+                <span class="tech-pill">TFLite Mobile</span>
+                <span class="tech-pill">Freezed</span>
+              </div>
+            </div>
+
+            <!-- Project Card 3: HyperDrop -->
+            <div class="project-card" data-project="hyperdrop">
+              <div class="project-tag">E-COMMERCE & SNEAKER DROPS</div>
+              <h3>HyperDrop — 120 FPS High-Tension Retail</h3>
+              <p>High-concurrency flash sale platform built to withstand 500k concurrent checkout spikes. Integrates gesture-driven 3D Matrix4 transforms, Apple Pay / Google Pay SDKs, and sub-millisecond cart optimistic reconciliation.</p>
+              <div class="tech-pill-list">
+                <span class="tech-pill">Matrix4 3D</span>
+                <span class="tech-pill">Apple Pay</span>
+                <span class="tech-pill">Rive Animations</span>
+                <span class="tech-pill">GraphQL Client</span>
+                <span class="tech-pill">Fastlane CI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Smartphone Mockup -->
+          <div class="showcase-simulator-stage">
+            <div class="sim-controls-bar">
+              <!-- App Switcher Tabs -->
+              <div class="app-switcher-tabs" role="tablist">
+                <button class="app-tab-btn is-active" data-app-target="finpulse" role="tab" aria-selected="true">
+                  <span class="app-dot finpulse-dot"></span>FinPulse
+                </button>
+                <button class="app-tab-btn" data-app-target="zenpulse" role="tab" aria-selected="false">
+                  <span class="app-dot zenpulse-dot"></span>ZenPulse
+                </button>
+                <button class="app-tab-btn" data-app-target="hyperdrop" role="tab" aria-selected="false">
+                  <span class="app-dot hyperdrop-dot"></span>HyperDrop
+                </button>
+              </div>
+
+              <!-- Simulator Dev Actions -->
+              <div class="sim-action-tools">
+                <button class="sim-tool-btn" id="sim-hot-reload" title="Trigger Flutter Hot Reload">
+                  ⚡ <span>Hot Reload</span>
+                </button>
+                <button class="sim-tool-btn" id="sim-inspect-toggle" title="Toggle Widget Inspector">
+                  📐 <span>Inspect</span>
+                </button>
+                <button class="sim-tool-btn icon-only" id="sim-theme-toggle" title="Toggle Phone Theme">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- The Realistic iPhone Frame -->
+            <div class="phone-mockup" id="phone-mockup">
+              <!-- Titanium Bezel & Buttons -->
+              <div class="phone-hardware-buttons">
+                <span class="phone-btn vol-up"></span>
+                <span class="phone-btn vol-down"></span>
+                <span class="phone-btn power"></span>
+              </div>
+
+              <div class="phone-glass-screen">
+                <!-- Dynamic Island -->
+                <div class="dynamic-island">
+                  <span class="island-camera"></span>
+                  <span class="island-indicator"></span>
+                </div>
+
+                <!-- Live FPS Monitor -->
+                <div class="sim-fps-badge" id="sim-fps-badge">
+                  <span class="fps-dot"></span>
+                  <span class="fps-text">120.0 FPS • 8.3ms</span>
+                </div>
+
+                <!-- Hot Reload Notification Banner -->
+                <div class="sim-reload-banner" id="sim-reload-banner">
+                  ⚡ Hot Reloaded in 184ms
+                </div>
+
+                <!-- Inner App Screen Canvas -->
+                <div class="phone-screen-content" id="phone-screen-content">
+                  <!-- Injected dynamically by phone-simulator.js -->
+                </div>
+
+                <!-- Home Indicator Bar -->
+                <div class="home-indicator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 03: TECH MATRIX
+      =============================================== -->
+      <section
+        class="panel panel--content panel--stack"
+        id="stack"
+        data-index="3"
+        data-mobile-position="72% 22%"
+        aria-labelledby="stack-title"
+        aria-hidden="true"
+      >
+        <div class="content-panel panel-copy">
+          <p class="section-kicker"><span>03</span> Ecosystem & Mastery</p>
+          <h2 id="stack-title">The Complete Mobile Engineering Arsenal.</h2>
+          <p>I specialize in the end-to-end mobile lifecycle — from pixel shader math and memory profiling to automated continuous delivery pipelines. Here is the technical battle-tested matrix I rely on:</p>
+
+          <div class="matrix-grid">
+            <!-- Domain 1: Core & Rendering -->
+            <div class="matrix-card">
+              <div class="matrix-icon">⚡</div>
+              <h3>Core & Rendering Engine</h3>
+              <p>Dart 3.x, Flutter 3.29, Impeller, Custom RenderBoxes, Fragment Shaders (GLSL/SPIR-V), Rive 2.0, Skia, Platform Views.</p>
+              <div class="proficiency-bar"><span style="width: 98%;"></span></div>
+            </div>
+
+            <!-- Domain 2: State & Data Machines -->
+            <div class="matrix-card">
+              <div class="matrix-icon">🏛</div>
+              <h3>State & Data Architecture</h3>
+              <p>flutter_bloc, Riverpod, Freezed, Drift (SQLite), Isar NoSQL, Hive, HydratedBloc, Clean Architecture, Repository Pattern.</p>
+              <div class="proficiency-bar"><span style="width: 96%;"></span></div>
+            </div>
+
+            <!-- Domain 3: Native Platform Channels -->
+            <div class="matrix-card">
+              <div class="matrix-icon">📱</div>
+              <h3>Native iOS & Android Interop</h3>
+              <p>Swift, Kotlin, Platform Channels (MethodChannel & EventChannel), FFI (C/C++ bindings), Background Geolocation, BLE.</p>
+              <div class="proficiency-bar"><span style="width: 92%;"></span></div>
+            </div>
+
+            <!-- Domain 4: Cloud & Microservices -->
+            <div class="matrix-card">
+              <div class="matrix-icon">☁️</div>
+              <h3>Cloud, APIs & Backend</h3>
+              <p>Firebase Suite, Supabase, PostgreSQL, GraphQL, WebSockets, REST, Google Cloud Platform, Node/Go microservices.</p>
+              <div class="proficiency-bar"><span style="width: 90%;"></span></div>
+            </div>
+
+            <!-- Domain 5: DevOps & Automation -->
+            <div class="matrix-card">
+              <div class="matrix-icon">🚀</div>
+              <h3>CI/CD & App Store Delivery</h3>
+              <p>Fastlane, GitHub Actions, Codemagic, Firebase App Distribution, App Store Connect API, Google Play Console automation.</p>
+              <div class="proficiency-bar"><span style="width: 94%;"></span></div>
+            </div>
+
+            <!-- Domain 6: QA & Profiling -->
+            <div class="matrix-card">
+              <div class="matrix-icon">🧪</div>
+              <h3>Testing & Profiling</h3>
+              <p>Unit & Widget Tests, Integration Tests, Golden File Testing, Flutter DevTools Memory & CPU Profiler, LeakCanary, Sentry.</p>
+              <div class="proficiency-bar"><span style="width: 95%;"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 04: MINDSET & PHILOSOPHY
+      =============================================== -->
+      <section
+        class="panel panel--content panel--mindset"
+        id="mindset"
+        data-index="4"
+        data-mobile-position="72% 22%"
+        aria-labelledby="mindset-title"
+        aria-hidden="true"
+      >
+        <div class="mindset-split-container">
+          <div class="content-panel panel-copy">
+            <p class="section-kicker"><span>04</span> Mindset & The Human Behind The Code</p>
+            <h2 id="mindset-title">Obsessed with the 8.3ms Frame Window.</h2>
+            <p>Too many engineers treat cross-platform development as a compromise — accepting sluggish scroll physics, sloppy gesture hitboxes, and generic UI templates. I believe the opposite: <strong>Flutter is the most expressive interactive canvas ever conceived for human-computer interaction</strong>.</p>
+            <p>When an application renders at 120 FPS without a single dropped frame, users don't think about whether it was written in Swift, Kotlin, or Dart. They experience pure digital immediacy. That tactile magic is achieved not by accident, but through obsessive attention to micro-interactions, spring physics, and memory footprint management.</p>
+            <p>Beyond code, I treat software engineering with the patience of mechanical horology and deep respect for nature. Outside the IDE, you'll find me outdoors, observing natural rhythm, and drawing inspiration from organic balance. This deliberate equilibrium keeps my thinking clear, grounded, and intensely focused when architecting complex, high-concurrency mobile systems.</p>
+            <p>Direct, rigorous, and relentlessly focused on production-grade excellence. That is the standard I bring to every codebase.</p>
+
+            <div class="mindset-tags-row">
+              <span class="mindset-pill">⚡ 120 FPS Impeller</span>
+              <span class="mindset-pill">🏛 Clean Architecture</span>
+              <span class="mindset-pill">🌿 Nature & Clarity</span>
+              <span class="mindset-pill">🚀 Open Source Contributor</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Cinematic Framed Portrait Card -->
+          <div class="portrait-card-stage">
+            <div class="portrait-card" id="portrait-card">
+              <div class="portrait-glow-backplate"></div>
+              <div class="portrait-frame">
+                <img src="assets/images/hassan-cutout.png" alt="Hasan Mehmood - Lead Flutter Developer" class="portrait-photo" id="portrait-photo">
+                <div class="portrait-overlay-gradient"></div>
+
+                <!-- Floating Tags -->
+                <div class="portrait-badge-top">
+                  <span class="badge-pulse-indicator"></span>
+                  <span>LEAD FLUTTER DEVELOPER</span>
+                </div>
+
+                <div class="portrait-meta-bottom">
+                  <div class="meta-name-row">
+                    <h3>Hasan Mehmood</h3>
+                    <span class="meta-status-tag">ACTIVE / CRAFT</span>
+                  </div>
+                  <p class="meta-role-desc">Engineering fluid, high-performance Flutter mobile systems with 2.7+ years of dedicated lead craft and architectural excellence.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================
+           PANEL 05: CONTACT & COLLABORATION
+      =============================================== -->
+      <section
+        class="panel panel--content panel--contact"
+        id="contact"
+        data-index="5"
+        data-mobile-position="72% 22%"
+        aria-labelledby="contact-title"
+        aria-hidden="true"
+      >
+        <div class="content-panel panel-copy">
+          <p class="section-kicker"><span>05</span> Collaboration & Inquiries</p>
+          <h2 id="contact-title">Let's Build Something Exceptional.</h2>
+          <p>Whether you need a greenfield Flutter application built from the ground up, a high-stakes performance & jank audit, or architectural leadership for an enterprise mobile team — let's start the conversation.</p>
+
+          <div class="contact-card-box">
+            <!-- Direct Email Action -->
+            <div class="contact-action-row">
+              <a class="primary-mail-btn" href="mailto:hassan.flutter.architect@gmail.com" id="btn-email-primary">
+                <span>hassan.flutter.architect@gmail.com</span>
+                <span class="mail-arrow">↗</span>
+              </a>
+              <button class="copy-mail-btn" id="btn-copy-email" type="button" aria-label="Copy email to clipboard">
+                <span id="copy-btn-label">Copy Email</span>
+              </button>
+            </div>
+
+            <!-- Interactive Scope Pills -->
+            <div class="scope-selection">
+              <span class="scope-heading">Typical Engagements:</span>
+              <div class="scope-tags">
+                <span class="scope-tag">0-to-1 Mobile Architecture</span>
+                <span class="scope-tag">Performance & Impeller Tuning</span>
+                <span class="scope-tag">Design System Engineering</span>
+                <span class="scope-tag">Fractional Lead Mobile Architect</span>
+              </div>
+            </div>
+
+            <!-- Social & Network Links -->
+            <div class="social-links-grid">
+              <a class="social-link" href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <span>GitHub</span>
+                <span class="arrow-mini">↗</span>
+              </a>
+              <a class="social-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <span>LinkedIn</span>
+                <span class="arrow-mini">↗</span>
+              </a>
+              <a class="social-link" href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <span>X / Twitter</span>
+                <span class="arrow-mini">↗</span>
+              </a>
+              <button class="social-link resume-trigger" id="btn-view-resume" type="button">
+                <span>Resume / CV</span>
+                <span class="badge-mini">PDF</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Controls (Next, Previous, Progress) -->
+    <div class="section-controls" aria-label="Section Navigation">
+      <button type="button" data-previous aria-label="Previous section" id="btn-prev-section">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+
+      <div class="section-progress" aria-hidden="true">
+        <span id="progress-bar-indicator"></span>
+      </div>
+
+      <div class="section-counter" aria-hidden="true" id="section-counter">
+        <span id="counter-current">01</span> / <span id="counter-total">06</span>
+      </div>
+
+      <button type="button" data-next aria-label="Next section" id="btn-next-section">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+
+    <!-- Bottom Left Legal Links -->
+    <footer class="legal-links" aria-label="Legal information">
+      <span>© 2026 Hasan Mehmood</span>
+      <span aria-hidden="true">·</span>
+      <button type="button" data-legal-open="impressum">Impressum</button>
+      <span aria-hidden="true">·</span>
+      <button type="button" data-legal-open="privacy">Privacy</button>
+    </footer>
+
+    <p class="sr-only" id="section-announcer" aria-live="polite">Intro</p>
+  </div>
+
+  <!-- Custom Floating Physics Cursor -->
+  <div class="scroll-cursor" aria-hidden="true">
+    <span id="scroll-cursor-label">SCROLL</span>
+  </div>
+
+  <!-- Legal Modal: Impressum -->
+  <div class="legal-layer" id="legal-impressum" aria-hidden="true">
+    <button class="legal-backdrop" type="button" data-legal-close aria-label="Close Impressum"></button>
+    <article class="legal-card" role="dialog" aria-modal="true" aria-labelledby="impressum-title" tabindex="-1">
+      <button class="legal-close" type="button" data-legal-close aria-label="Close Impressum">Close</button>
+      <p class="legal-kicker">LEGAL INFORMATION</p>
+      <h2 id="impressum-title">Impressum</h2>
+      <div class="legal-copy">
+        <p><strong>Hasan Mehmood</strong><br>Lead Flutter Developer & Mobile Systems Architect<br>Email: hassan.flutter.architect@gmail.com</p>
+        <h3>Professional Services</h3>
+        <p>Cross-platform software development, Flutter application architecture, code auditing, and performance engineering.</p>
+        <h3>Copyright & Disclaimer</h3>
+        <p>All trademarks, logos, and brand names are the property of their respective owners. Flutter and the related logo are trademarks of Google LLC.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- Legal Modal: Privacy -->
+  <div class="legal-layer" id="legal-privacy" aria-hidden="true">
+    <button class="legal-backdrop" type="button" data-legal-close aria-label="Close Privacy Policy"></button>
+    <article class="legal-card" role="dialog" aria-modal="true" aria-labelledby="privacy-title" tabindex="-1">
+      <button class="legal-close" type="button" data-legal-close aria-label="Close Privacy Policy">Close</button>
+      <p class="legal-kicker">DATA PROTECTION</p>
+      <h2 id="privacy-title">Privacy Policy</h2>
+      <div class="legal-copy">
+        <p>This portfolio is engineered with privacy as a fundamental premise. No third-party tracking scripts, cookies, or invasive analytics are utilized.</p>
+        <h3>Data Collection</h3>
+        <p>When you contact me via email, your transmission is encrypted and processed solely to evaluate mutual collaboration.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- Resume / CV Modal Preview -->
+  <div class="legal-layer" id="legal-resume" aria-hidden="true">
+    <button class="legal-backdrop" type="button" data-legal-close aria-label="Close Resume"></button>
+    <article class="legal-card legal-card--resume" role="dialog" aria-modal="true" aria-labelledby="resume-title" tabindex="-1">
+      <button class="legal-close" type="button" data-legal-close aria-label="Close Resume">Close</button>
+      <p class="legal-kicker">CURRICULUM VITAE</p>
+      <h2 id="resume-title">Engineering Profile</h2>
+      <div class="legal-copy resume-sheet">
+        <div class="resume-header">
+          <div class="resume-user-info">
+            <img src="assets/images/hassan-cutout.png" alt="Hasan Mehmood" class="resume-avatar">
+            <div>
+              <h3>Hasan Mehmood</h3>
+              <p class="resume-role">Lead Flutter Developer • 2.7+ Years Experience</p>
+            </div>
+          </div>
+          <a class="resume-download-btn" href="mailto:hassan.flutter.architect@gmail.com?subject=Resume%20Request">
+            Download PDF ↗
+          </a>
+        </div>
+        <div class="resume-section">
+          <h4>Core Highlights</h4>
+          <ul>
+            <li>Architected and delivered 15+ production Flutter apps reaching over 10,000,000 global installs.</li>
+            <li>Maintained a spotless 4.9★ App Store & Google Play average rating with zero-crash crash-free session rates exceeding 99.8%.</li>
+            <li>Pioneered migration of legacy Flutter apps to Dart 3 records, pattern matching, and Impeller Vulkan/Metal shader rendering.</li>
+            <li>Collaborated in cross-functional mobile teams establishing automated CI/CD golden testing pipelines.</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- ==============================================
+       PRELOADER: FLUTTER ENGINE COMPILER & HOT RELOAD GAUGE
+  =============================================== -->
+  <div class="preloader" role="status" aria-live="polite" aria-label="Initializing Flutter Engine">
+    <div class="preloader-glass">
+      <div class="meter-heading">
+        <div class="meter-title-wrap">
+          <span class="engine-badge">FLUTTER ENGINE 3.29.0</span>
+          <h2>Initializing Impeller Shaders...</h2>
+        </div>
+        <strong id="load-percentage">0%</strong>
+      </div>
+
+      <!-- Real-time Terminal Log Output -->
+      <div class="preloader-terminal" id="preloader-terminal">
+        <div class="terminal-line" id="term-line-1">$ flutter run -d iphone-16-pro --release</div>
+        <div class="terminal-line text-dim" id="term-line-2">[✓] Dart 3.7.0 AOT runtime compiling...</div>
+      </div>
+
+      <!-- VU Gauge Meter -->
+      <div class="vu-meter" aria-hidden="true">
+        <div class="vu-labels">
+          <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span class="danger-label">85%</span><span>100%</span>
+        </div>
+        <div class="vu-track" id="vu-track"></div>
+        <div class="vu-needle" id="vu-needle"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="global-toast" id="global-toast" aria-live="polite"></div>
+
+  <!-- GSAP CDN for smooth panel transitions -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Project Scripts -->
+  <script src="sound-fx.js"></script>
+  <script src="canvas-bg.js"></script>
+  <script src="phone-simulator.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
