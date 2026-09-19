@@ -274,8 +274,9 @@
       if (nextBtn) nextBtn.disabled = state.activeIndex === panels.length - 1;
 
       // Reset scroll position of incoming panel to top
-      const scrollable = nextPanel.querySelector(".content-panel, .showcase-narratives");
+      const scrollable = nextPanel.querySelector(".content-panel, .showcase-narratives, .showcase-split-container, .mindset-split-container, .hero-split-container");
       if (scrollable) scrollable.scrollTop = 0;
+      nextPanel.scrollTop = 0;
 
       // Update Cursor Label
       if (cursorLabel) {
@@ -391,7 +392,7 @@
       if (state.activeLegalLayer || state.menuOpen || !state.preloaderDone || wheelLock) return;
 
       // Check if user is scrolling inside a scrollable content panel
-      const scrollArea = e.target.closest(".content-panel, .showcase-narratives, .phone-screen-content");
+      const scrollArea = e.target.closest(".content-panel, .showcase-narratives, .phone-screen-content, .panel, .showcase-split-container, .mindset-split-container, .hero-split-container");
       if (scrollArea && scrollArea.scrollHeight > scrollArea.clientHeight + 4) {
         const atTop = scrollArea.scrollTop <= 8;
         const atBottom = Math.ceil(scrollArea.scrollTop + scrollArea.clientHeight) >= scrollArea.scrollHeight - 10;
@@ -423,7 +424,7 @@
     window.addEventListener("touchstart", (e) => {
       touchStartY = e.touches[0].clientY;
       touchStartX = e.touches[0].clientX;
-      const target = e.target.closest(".content-panel, .showcase-narratives, .phone-screen-content");
+      const target = e.target.closest(".content-panel, .showcase-narratives, .phone-screen-content, .panel, .showcase-split-container, .mindset-split-container, .hero-split-container");
       if (target && target.scrollHeight > target.clientHeight + 4) {
         touchScrollTarget = target;
         touchAtTop = target.scrollTop <= 8;
@@ -610,6 +611,7 @@
     function openLegal(name) {
       const layer = document.getElementById(`legal-${name}`);
       if (!layer) return;
+      setMenu(false);
       state.activeLegalLayer = layer;
       body.classList.add("is-legal-open");
       layer.classList.add("is-open");
